@@ -10,5 +10,12 @@ class Manager(object):
     def add():
         target = open("testing.txt", 'a')
         line1 = input()
+        target.write(f"{inputdate}\n")
+        if Item.done == True:
+            target.write("it's done")
+        else:
+            target.write("it's not done")
         target.write(f"\n{line1}")
         target.close()
+    def complete():
+        Item.done = True
