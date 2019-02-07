@@ -1,5 +1,9 @@
+import datetime
 class Item(object):
     def __init__(self, timestamp, done, text):
-        done = False
-class HW(Item):
-    done = True
+        pass
+    timestamp = datetime.date.today()
+    text = ""
+    done = False
+
+inputdate = Item.timestamp
